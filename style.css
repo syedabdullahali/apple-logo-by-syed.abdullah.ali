@@ -1,0 +1,147 @@
+body{
+ margin: 0;
+ padding: 0;
+
+ background-color: black;
+
+}
+#container{
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+  }
+
+#apple{
+   
+    width: 200px;
+    height: 180px;
+
+    background: black;
+    border-radius: 36% 36% 41% 41%/ 42% 42% 75% 75%;
+
+    position: relative;
+
+    box-shadow: 2px -34px -34px 0px blue;
+}
+
+#apple:before{
+    content: "";
+
+    width:55px;
+    height: 55px;
+
+    background: #000;
+
+    position: absolute;
+    top:-33%;
+    left:50%;
+
+    background: #000;
+    border-radius: 100px 0;
+
+    z-index: 3;
+
+
+}
+#apple:after{
+    content: "";
+
+  
+    width:85px;
+    height: 85px;
+
+    position: absolute;
+    top:20%;
+    left:85%;
+
+    background: white;
+    
+    border-radius: 50%;
+    z-index: 3;
+
+    clip-path: circle( 50% at 5% 50%);
+}
+
+.white1{
+    background: white;
+    width:80px;
+    height: 85px;
+
+    background: white;
+    border-radius: 50%;
+
+    position: absolute;
+    top:-40%;
+    left: 30%;
+
+    clip-path: circle( 60% at 50% 90%);
+
+}
+
+.white2{
+   height: 100px;
+   width: 100px;
+
+   background-color:white;
+   border-radius: 40%;
+
+   position: absolute;
+   top:97%;
+   left: 25%;
+
+   transform: rotate(45deg); 
+
+   clip-path:polygon(0% 0%, 40% 0, 40% 0% , 0% 40%) ; 
+}
+#apple-background{
+    width: 300px;
+    height: 300px;
+
+    background-color: white;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 20px;
+
+    box-shadow: -1px -1px 10px 2px blue,
+    1px 1px 5px 4px white,
+    1px 1px 6px 6px white;
+  
+
+}
+
+#apple-background:hover{
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    place-items: center;
+    
+    background-color: white;
+    border-radius: 20px;
+    
+    box-shadow: -1px -1px 20px 5px blue,
+    1px 1px 5px 9px white,
+    1px 1px 6px 13px blue;
+  
+
+}
+
+h2{
+    color:black;
+
+    position: absolute;
+    top:95%;
+    left: 20%;
+
+    font-family: sans-serif;
+
+    transform: rotate(1deg);
+    
+    text-shadow: 0.5px 0.5px 0.5px black ;
+
+}
+
+
